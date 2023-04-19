@@ -1,7 +1,0 @@
-[submodule "saleor"]
-	path = saleor
-	url = https://github.com/alperenkaplan/saleor.git
-[submodule "saleor-dashboard"]
-	path = saleor-dashboard
-	url = https://github.com/alperenkaplan/saleor-dashboard.git
-
