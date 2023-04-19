@@ -34,24 +34,6 @@ services:
       - DASHBOARD_URL=http://localhost:9000/
       - ALLOWED_HOSTS=localhost,api
 
-  storefront:
-    extends:
-      file: ./react-storefront/docker-compose.yml
-      service: storefront
-    networks:
-      - saleor-backend-tier
-    depends_on:
-      - api
-      - saleor-app-checkout
-
-  saleor-app-checkout:
-    extends:
-      file: ./react-storefront/docker-compose.yml
-      service: saleor-app-checkout
-    networks:
-      - saleor-backend-tier
-    depends_on:
-      - api
 
   dashboard:
     build:
